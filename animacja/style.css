@@ -1,0 +1,67 @@
+.animated-div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+.progres {
+    width: 500px;
+    height: 50px;
+    background: lightgray;
+    border-radius: 0px;
+    animation-name: example3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes example {
+    from {
+        background: red;
+        margin: 0;
+    }
+
+    to {
+        background: black;
+        /* padding: 20px; */
+        margin-left: 50px;
+    }
+}
+
+@keyframes example2 {
+    0% {
+        background: red;
+        margin: 0;
+    }
+
+    50% {
+        background: black;
+        /* padding: 20px; */
+        margin-left: 50px;
+    }
+
+    100% {
+        background: red;
+        margin: 0;
+    }
+}
+
+@keyframes example3 {
+    0% {
+        width: 0px;
+        background: red;
+    }
+
+    50% {
+        background: yellow;
+    }
+
+    100% {
+        width: 100%;
+        background: green;
+    }
+}
